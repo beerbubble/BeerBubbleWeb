@@ -31,7 +31,7 @@ namespace BeerBubbleWeb
                 }
                 else if (!string.IsNullOrEmpty(sid))
                 {
-                    ViewData["User"] = new LoginIdentity(sid);
+                    ViewData["User"] = new LoginIdentity(Convert.ToInt32(sid),string.Empty,sid);
                 }
                 else
                 {
